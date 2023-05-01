@@ -1,3 +1,7 @@
+:root {
+    --primaryColor: #FF5B2E;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -7,11 +11,203 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Poppins', 'sans-serif';
+    background: #FFFAF5;
 }
+/* Common */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Sora', 'sans-serif';
 }
 input,textarea,select,button {
     font-size: inherit;
     font-family: inherit;
+}
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+.btn {
+    display: inline-block;
+    border: 1px solid var(--primaryColor);
+    padding: 15px 30px;
+    border-radius: 99px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--primaryColor);
+}
+.btn:hover {
+    background: var(--primaryColor);
+    color: #fff;
+}
+/* Header */
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0;
+}
+.navbar__list {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+.navbar__link {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #5E6085;
+}
+.navbar__link:hover {
+    color: #000958;
+    font-weight: 600;
+}
+.header-action__btn{
+    margin-right: 36px;
+    color: #000958;
+}
+/* Hero */
+.hero {
+    margin-top: 74px;
+}
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+.hero__media {
+    position: relative;
+    display: flex;
+    padding-bottom: 94px;
+}
+.hero__img-wrap {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 388px;
+    height: 488px;
+    background: #FE997B;
+    border-radius: 16px;
+    border: 3px solid #fff;
+}
+.hero__img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: inherit;
+}
+.hero__decor {
+    position: absolute;
+    z-index: -1;
+}
+.hero__decor-left {
+    width: 230px;
+    height: 230px;
+    left: -58px;
+    bottom: 10px;
+}
+.hero__decor-right {
+    width: 50px;
+    height: 100px;
+    top: 16px;
+    right: -40px;
+}
+.hero__img-wrap-small {
+    align-self: flex-end;
+    width: 186px;
+    height: 244px;
+    margin: 0 0 -58px -24px;
+    background: #FAA7AD;
+    border: 2px solid #FCDDE0;
+}
+.hero__list {
+    position: absolute;
+    bottom: 0;
+    left: 129px; 
+    width: 250px;
+    height: 156px;
+    padding: 18px 14px;
+    background: #FFF;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+    border-radius: 10px;
+}
+.hero-list-item {
+    display: flex;
+}
+.hero-list-item__thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #FEC23F;
+}
+.hero-list-item__info {
+    margin-left: 10px;
+}
+.hero-list-item__title {
+    font-family: Sora, sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #181E52;
+}
+.hero-list-item__skeleton {
+    margin-top: 6px;
+    width: var(--width, 118px);
+    height: 4px;
+    background: #000958;
+    opacity: 0.08;
+    border-radius: 10px;
+}
+.hero-list-item__separate {
+    margin: 20px 0;
+    width: 222px;
+    height: 2px;
+    border: 2px solid #F2F2F2;
+    border-radius: 2px;
+}
+.hero-list-item:last-child .hero-list-item__thumb {
+    background: #C6E2FA;
+}
+.hero__heading {
+    font-weight: 800;
+    font-size: 6.6rem;
+    line-height: 1.15;
+    color: #000958;
+}
+.hero__desc {
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #656689;
+}
+.hero__row {
+    display: flex;
+    margin-top: 38px;
+    gap: 24px;
+    align-items: center;
+    justify-content: left;
+}
+.hero__cta {
+    display: flex;
+    align-items: center;
+    padding: 22px 30px;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+.btn-primary {
+    display: inline-flex;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 1.6rem;
+}
+.hero__cta-link {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #000958;
 }
