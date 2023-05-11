@@ -451,12 +451,11 @@ input,textarea,select,button {
 }
 /* Service */
 .service {
-    margin: 130px 0;
+    padding: 68px 0 130px 0;
     background: #FFF6ED;
 }
 .service__top {
     text-align: center;
-    padding-top: 68px;
 }
 .service__desc {
     font-family: 'Sora';
@@ -471,7 +470,6 @@ input,textarea,select,button {
     grid-template-columns: auto 1fr auto;
     margin-top: 71px;
     column-gap: 71px;
-    padding-bottom: 100px;
 }
 .service__card {
     width: 294px;
@@ -548,4 +546,99 @@ input,textarea,select,button {
 }
 .service__cta-wrap {
     margin-top: 45px;
+}
+/* Staff */
+.staff {
+    padding: 130px 0;
+}
+.staff__desc,
+.staff__heading,
+.staff-item {
+    text-align: center;
+}
+.staff__desc {
+    margin-bottom: 15px;
+}
+.staff__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 35px;
+    margin-top: 45px;
+    text-align: center;
+}
+.staff-item__img-wrap {
+    position: relative;
+    margin: 0 16px;
+    border-radius: 130px;
+}
+.staff-item__img-wrap::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 266px;
+    border-radius: inherit;
+    background: linear-gradient(180deg, #90CCFF 0%, #59A8EB 95.96%);
+}
+.staff-item__img-wrap::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: calc(100% + 36px);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transform: translateX(-50%);
+}
+.staff-item:nth-child(1) .staff-item__img-wrap::after {
+    background-image: url(../img/staff-decor-01.svg);
+}
+.staff-item:nth-child(2) .staff-item__img-wrap::after {
+    background-image: url(../img/staff-decor-02.svg);
+}
+.staff-item:nth-child(2) .staff-item__img-wrap::before {
+    background: linear-gradient(180deg, #FF997E 0%, #F3752E 100%);
+}
+.staff-item:nth-child(3) .staff-item__img-wrap::after {
+    background-image: url(../img/staff-decor-03.svg);
+}
+.staff-item:nth-child(3) .staff-item__img-wrap::before {
+    background: linear-gradient(180deg, #FABF3E 0%, #FFA14A 100%);
+}
+.staff-item:nth-child(4) .staff-item__img-wrap::after {
+    background-image: url(../img/staff-decor-04.svg);
+}
+.staff-item:nth-child(4) .staff-item__img-wrap::before {
+    background: linear-gradient(180deg, #5BD6E2 0%, #00A7CC 100%);
+}
+.staff-item:nth-child(even) .staff-item__img-wrap::after {
+    background-position: 0 16px;
+}
+.staff-item__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    border-radius: inherit;
+}
+.staff-item__title {
+    margin-top: 34px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #656689;
+}
+.staff-item__name {
+    font-family: 'Sora';
+    margin-top: 14px;
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #000958;
+}
+.staff__cta-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
 }
