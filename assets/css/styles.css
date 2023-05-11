@@ -449,3 +449,103 @@ input,textarea,select,button {
     opacity: 1;
     height: 2px;
 }
+/* Service */
+.service {
+    margin: 130px 0;
+    background: #FFF6ED;
+}
+.service__top {
+    text-align: center;
+    padding-top: 68px;
+}
+.service__desc {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #5E6085;
+    margin-bottom: 15px;
+}
+.service__body {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-top: 71px;
+    column-gap: 71px;
+    padding-bottom: 100px;
+}
+.service__card {
+    width: 294px;
+    background: #FFF;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    border-radius: 10px;
+    padding: 30px 22px 28px;
+}
+.service__card + .service__card {
+    margin-top: 24px;
+}
+.service__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-item__heading {
+    position: relative;
+    padding-left: 12px;
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #000958;
+}
+.service-item__heading::before {
+    position: absolute;
+    content: "";
+    inset: 0 auto 0 0;
+    display: inline-block;
+    width: 2px;
+    border-radius: 1px;
+    background: linear-gradient(#FF5B2E, #FFA187);
+}
+.service-item__desc {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
+}
+.service-item__read-more {
+    position: relative;
+    font-family: 'Sora';
+    display: inline-block;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #34396A;
+}
+.service-item__read-more::after {
+    position: absolute;
+    content: url(../icon/ArrowUpRight.svg);
+    top: 0;
+    right: -20px;
+}
+.service__media {
+    position: relative;
+    width: 447px;
+}
+.service__media::after {
+    content: "";
+    position: absolute;
+    height: 350px;
+    left: 16px;
+    right: 16px;
+    bottom: 0;  
+    background: linear-gradient(180deg, #9DF1FB 0%, #73D0DB 108.14%);
+    border-radius: 10px;
+}
+.service__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+}
+.service__cta-wrap {
+    margin-top: 45px;
+}
